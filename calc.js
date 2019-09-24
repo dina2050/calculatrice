@@ -16,7 +16,7 @@ for (let i = 0; i < 16; i++) {
         if (this.innerHTML == "="){
             para.innerHTML = eval(para.innerHTML)
         }
-        else if (this.value == "reset"){
+        else if (this.innerHTML == "reset"){
             para.innerHTML= ""; 
         }
         else {
