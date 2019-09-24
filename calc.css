@@ -11,7 +11,7 @@ div {
     width: 28%;
 }
 button:not(#egal):not(#reset){
-    width: 23.9%;
+    width: 25%;
     padding: 1em;
 }
 p {
@@ -21,7 +21,7 @@ p {
 }
 
 #egal {
-    width: 49%;
+    width: 50%;
     padding: 1em;
 }
 #reset {
