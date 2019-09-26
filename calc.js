@@ -5,7 +5,6 @@ var para = document.createElement("p");
 document.body.appendChild(div);
 div.appendChild(para);
 charlist = ["1", "2", "3", "+", "4", "5", "6", "-", "7", "8", "9", "*", "0", "=", "/", "reset"];
-j = 0;
 
 for (let i = 0; i < 16; i++) {
     var btn = document.createElement("button");
@@ -16,9 +15,13 @@ for (let i = 0; i < 16; i++) {
         if (this.innerHTML == "="){
             para.innerHTML = eval(para.innerHTML)
         }
-        else if (this.value == "reset"){
+        else if (this.innerHTML == "reset"){
             para.innerHTML= ""; 
         }
+        else if (this.innerHTML=="+" && para.innerHTML[para.innerHTML.length-1]=="+"){
+            para.innerHTML+="";
+        }
+          
         else {
             this.innerHTML=charlist[i];
             para.innerHTML += this.innerHTML;
